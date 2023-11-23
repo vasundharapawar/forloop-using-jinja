@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage of for loop statement..</title>
+</head>
+<body>
+    <center>
+        <h1>Usage of for loop </h1>
+        <h3>The actual data is -- >{{name}} < -- </h3><br>
+        {% for i in name %}
+            {% if i == ' ' %}
+                <br>
+            {% else %}
+                <span style="color: red;">{{i}} </span>
+            {% endif %}
+        {% endfor %}
+
+        {% for i in name %}
+            <h3 style="color: darkorchid;">{{i}} </h3>
+        {% endfor %}
+
+
+    </center>
+</body>
+</html>
